@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="heading"> Hi Hello!</div>
+    <button onclick="useGetElementById()">Change the text</button>
+    <br><br>
 
+    <div id="heading2">Hosmi K</div>
+    <button onclick="useQuerySelector()">Change style</button>
+    <br><br>
+
+    <p id="info">Frontend developer</p>
+    <button onclick="changeContent()">Change content</button>
+    <br><br>
+
+    <div id="x">Hypertext Markup Language</div>
+    <button onclick="changeStyle()">change style</button>
+
+
+</body>
+<script>
+
+    function useGetElementById() {
+      const title = document.getElementById("heading");
+      title.textContent = "Welcome...";
+    }
+
+     function useQuerySelector() {
+      const a = document.querySelector("#heading2");
+      a.style.color = "red";
+    }
+
+    function changeContent()
+    {
+        const b=document.getElementById("info");
+        b.textContent="Dotnet";
+    }
+
+    function changeStyle() {
+      const c = document.getElementById("x");
+      c.style.color = "Yellow";
+      c.style.fontSize="100px";
+    }
+</script>
+</html>
